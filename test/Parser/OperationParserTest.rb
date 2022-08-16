@@ -6,7 +6,7 @@ require_relative '../../src/Operation'
 require_relative '../../src/OperationType'
 require 'json'
 
-class OperationParserTest  < Minitest::Test
+class OperationParserTest < Minitest::Test
   def setup
     @operation_parser = OperationParser.new
     @buy_operation = Operation.new(20, 10, 200, OperationType::BUY, 1, 'BUY AntonioCoin', '123')

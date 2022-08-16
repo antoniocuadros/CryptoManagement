@@ -14,7 +14,7 @@ class PortfolioManager
   def portfolio(portfolio, user)
     portfolio = @portfolios.include?(portfolio) ? @portfolios.at(@portfolios.find_index(portfolio)) : nil
 
-    if(!portfolio.nil? && portfolio.user.userName != user.userName)
+    if(!portfolio.nil? && portfolio.user.user_name != user.user_name)
       portfolio = nil
     end
 

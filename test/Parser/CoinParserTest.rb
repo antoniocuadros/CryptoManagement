@@ -7,7 +7,7 @@ require_relative '../../src/Operation'
 require_relative '../../src/OperationType'
 require 'json'
 
-class CoinParserTest  < Minitest::Test
+class CoinParserTest < Minitest::Test
   def setup
     @coin_parser = CoinParser.new
     @operation_parser = OperationParser.new

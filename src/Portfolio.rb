@@ -4,7 +4,7 @@ require_relative 'Coin'
 require_relative 'User'
 
 class Portfolio
-  attr_accessor :name, :user
+  attr_accessor :name, :user, :coins
 
   def initialize(name, user)
     @name = name
